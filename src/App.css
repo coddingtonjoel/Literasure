@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: rgb(58, 58, 58);
+}
+
+.complete-page {
+    position: relative;
+    background-image: linear-gradient(
+        to top right,
+        rgb(25, 25, 25),
+        rgb(46, 46, 46),
+        rgb(37, 37, 37),
+        rgb(31, 31, 31)
+    );
+    padding: 30px;
+}
