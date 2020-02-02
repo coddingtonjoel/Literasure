@@ -1,15 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html {
+    /* set to to 10px */
+    font-size: 62.5%;
 }
 
 body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3.2rem;
     line-height: 1.5;
     color: rgb(58, 58, 58);
+    box-sizing: border-box;
 }
 
 .complete-page {
@@ -21,5 +27,5 @@ body {
         rgb(37, 37, 37),
         rgb(31, 31, 31)
     );
-    padding: 30px;
+    padding: 3rem;
 }

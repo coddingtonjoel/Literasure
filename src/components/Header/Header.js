@@ -1,31 +1,33 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 import logo2x from "../../images/Literasure@2x.png";
 import Button from "@material-ui/core/Button";
 
 const Header = () => {
     return (
         <header className="header">
-            <div className="logo-box">
-                <img src={logo2x} alt="" className="logo" />
+            <div className="header__logo--box">
+                <img src={logo2x} alt="" className="header__logo" />
             </div>
-            <div className="page-head-container">
-                <h1 className="page-head">
-                    <span className="page-head-main">Literasure</span>
-                    <span className="page-head-sub">
+            <div className="header__text--box">
+                <h1 className="header__title">
+                    <span className="header__title--main">Literasure</span>
+                    <span className="header__title--sub">
                         Recommends the books you{" "}
-                        <span className="page-head-actually">actually</span>{" "}
+                        <span className="header__title--sub-actually">
+                            actually
+                        </span>{" "}
                         want to read.
                     </span>
                     <Button
                         style={styles.btn}
-                        className="btn btn-signup"
+                        className="header__btn header__btn--signup"
                         href="#">
                         Sign Up
                     </Button>
                     <Button
                         style={styles.btn}
-                        className="btn btn-login"
+                        className="header__btn header__btn--login"
                         href="#">
                         Login
                     </Button>
