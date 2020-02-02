@@ -1,0 +1,7 @@
+@import "../abstracts/variables";
+
+.complete-page {
+    position: relative;
+    background-image: linear-gradient($main-gradient);
+    padding: 3rem;
+}
