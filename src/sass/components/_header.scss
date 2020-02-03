@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 .header {
     height: 85vh;
     background-size: cover;
@@ -7,7 +9,7 @@
     animation-fill-mode: forwards;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 60% 100%, 40% 100%, 0 80vh);
     animation: fillInBkg 4s;
-    background-image: linear-gradient(315deg, #e9b34fde 0%, #ebb755dc 74%);
+    background-image: $gold-gradient;
 
     &::after {
         content: " ";
@@ -26,16 +28,6 @@
         animation: fadeInBkg 2s ease-in;
         animation-delay: 1s;
         animation-fill-mode: forwards;
-    }
-
-    &__logo-box {
-        position: absolute;
-        top: 2rem;
-        left: 1rem;
-    }
-
-    &__logo {
-        height: 10rem;
     }
 
     &__text-box {
@@ -79,7 +71,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: #ebb755;
-        padding: 1rem 3rem;
+        padding: 1rem 5rem;
         margin: 0 2.5rem;
         font-size: 1.6rem;
         display: inline-block;
@@ -101,8 +93,7 @@
 
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
-            0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+        box-shadow: $box-shadow;
     }
 
     &:active {

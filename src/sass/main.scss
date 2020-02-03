@@ -6,7 +6,10 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "components/navbar";
 @import "components/header";
 @import "components/hook";
+@import "components/images";
+@import "components/features";
 
 @import "pages/home";

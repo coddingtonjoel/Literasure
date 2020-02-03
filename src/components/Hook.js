@@ -4,12 +4,15 @@ const Hook = () => {
     return (
         <div className="hook">
             <div className="hook__box">
-                <div className="hook__box--left">PLACEHOLDER</div>
-                <div className="hook__box--text hook__box--textbox">
-                    Our process uses advanced artificial intelligence technology
-                    to learn your book preferences through simple methods.
-                </div>
-                <div className="hook__box--right">PLACEHOLDER</div>
+                <h2 className="hook__box--text">
+                    <div className="hook__box--primary">
+                        ''Our mission is to promote reading habits encouraged by
+                        discovery.''
+                    </div>
+                    <div className="hook__box--sub">
+                        -Winston Evans, Founder of <em>Literasure</em>
+                    </div>
+                </h2>
             </div>
         </div>
     );

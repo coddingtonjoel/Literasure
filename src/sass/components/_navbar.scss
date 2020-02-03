@@ -1,0 +1,63 @@
+.navbar {
+    z-index: 1;
+    position: relative;
+    height: 11vh;
+}
+
+.navbar__content {
+    width: 100vw;
+    display: flex;
+
+    &--logobox {
+        position: relative;
+        left: -0.7rem;
+        top: 0.5rem;
+    }
+
+    &--logo {
+        height: 7rem;
+    }
+
+    &--links {
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        flex: 1 0 20%;
+        align-self: flex-end;
+    }
+
+    &--link {
+        // !important necessary for overriding Material-UI button attributes
+        background-image: $gold-gradient-2 !important;
+        background-clip: text;
+        margin: 0 1rem !important;
+        transition: 0.2s !important;
+    }
+
+    &--link:hover {
+        transform: translateY(-0.2rem);
+    }
+
+    &--link:after {
+        content: "";
+        padding: 0 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        transition: 0.2s;
+    }
+
+    &--link:hover::after {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #fedb37;
+    }
+
+    &--link:active {
+        //changes from 'transparent' to gold, adding Material-UI ripple
+        color: #fedb37 !important;
+    }
+}

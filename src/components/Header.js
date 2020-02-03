@@ -1,14 +1,10 @@
 import React from "react";
-import "../sass/components/_header.scss";
-import logo2x from "../images/Literasure@2x.png";
+
 import Button from "@material-ui/core/Button";
 
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__logo-box">
-                <img src={logo2x} alt="" className="header__logo" />
-            </div>
             <div className="header__text-box">
                 <h1 className="header__title">
                     <span className="header__title--main">Literasure</span>

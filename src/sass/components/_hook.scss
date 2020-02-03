@@ -1,46 +1,42 @@
 @import "../abstracts/variables";
 
 .hook {
-    padding-top: 0.2rem;
-    height: 60vh;
-}
-
-.hook__box {
-    margin: 5vh 0;
+    padding: 4rem;
+    background: $main-gradient-light;
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+    margin: 3rem 0;
+    height: 20vh;
     display: flex;
-    height: 50vh;
     align-items: center;
-    justify-content: space-between;
-    &--left {
-        flex: 1 0 30rem;
+    animation: fadeInHook 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+
+    &__box {
+        align-self: center;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__box--text {
         text-align: center;
-        color: white;
+        font-family: "Raleway", sans-serif;
+        width: 90vw;
+        background: $gold-gradient-2;
+        background-clip: text;
+        color: transparent;
+        text-shadow: $box-shadow;
+        text-transform: uppercase;
     }
 
-    &--textbox {
-        border: 1.5rem solid;
-        border-radius: 2rem;
+    &__box--primary {
+        font-size: 3.3rem;
     }
 
-    &--text {
-        flex: 1 0 30rem;
-        height: 50vh;
-        position: relative;
-        margin: 1rem;
-        padding: 6rem 5rem;
-        text-align: left;
-        font-size: 2.4rem;
-        background-image: linear-gradient(
-            to top right,
-            rgb(216, 203, 174),
-            rgb(185, 185, 185)
-        );
-        max-width: 50rem;
-    }
-
-    &--right {
-        flex: 1 0 30rem;
-        color: white;
-        text-align: center;
+    &__box--sub {
+        font-size: 2rem;
+        font-weight: 200;
     }
 }

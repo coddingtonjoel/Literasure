@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+@import "../abstracts/extends";
+
+.features {
+    display: flex;
+    padding: 4rem;
+    color: black;
+    background: $main-gradient-light;
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.features__section {
+    flex: 1 0 22%;
+    justify-content: space-around;
+    margin: 3rem 1.5rem;
+    background-image: $gold-gradient;
+    height: 50vh;
+    display: inline-block;
+    padding-top: 12%;
+    align-items: center;
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+    position: relative;
+    transition: 0.2s;
+
+    &--icon {
+        font-size: 5rem;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &--head {
+        padding: 0 2.5rem;
+        font-size: 2.7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &--label {
+        padding: 2rem 2.5rem;
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+    }
+}
