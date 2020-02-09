@@ -1,9 +1,11 @@
 .images {
     display: flex;
+    height: 100%;
 
     &__croptwo {
         flex: 1 0 0;
-        height: 40rem;
+        height: 48rem;
+        width: 45vw;
         align-self: flex-start;
         border-radius: 20px;
         -webkit-mask-image: -webkit-gradient(
@@ -22,7 +24,8 @@
 
     &__cropone {
         flex: 1 0 0;
-        height: 40rem;
+        height: 48rem;
+        width: 45vw;
         align-self: flex-end;
         border-radius: 20px;
         -webkit-mask-image: -webkit-gradient(
