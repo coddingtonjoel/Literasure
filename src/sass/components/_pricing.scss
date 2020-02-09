@@ -31,12 +31,12 @@
     position: relative;
 
     &--basic {
-        flex: 0 0 60rem;
-        margin-left: 5rem;
+        flex: 1 0 60rem;
+        margin: 0 2rem 0 5rem;
     }
     &--premium {
-        flex: 0 0 60rem;
-        margin-right: 5rem;
+        flex: 1 0 60rem;
+        margin: 0 5rem 0 2rem;
     }
 
     &--title {

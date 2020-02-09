@@ -8,7 +8,7 @@ const Footer = () => {
                 <p className="footer__company--brand">Literasure</p>
                 <p className="footer__company--sub">©Paperback Inc. 2020</p>
             </div>
-            <div style={styles.div}>
+            <div style={styles.btn_div}>
                 <Button
                     href={process.env.PUBLIC_URL + "/about"}
                     style={styles.btn}>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <Button style={styles.btn}>Contact</Button>
                 <Button style={styles.btn}>Terms & Conditions</Button>
             </div>
-            <div className="footer__social" style={styles.div}>
+            <div className="footer__social" style={styles.social_div}>
                 <Button
                     href="https://www.facebook.com"
                     target="__blank"
@@ -57,9 +57,14 @@ const styles = {
         fontSize: "1rem",
         margin: "0 1rem"
     },
-    div: {
+    btn_div: {
         alignSelf: "center",
-        flex: "0 0 35rem"
+        flex: "0 0 25%"
+    },
+    social_div: {
+        textAlign: "center",
+        alignSelf: "center",
+        flex: "0 0 25%"
     },
     social: {
         fontSize: "1.5rem",
