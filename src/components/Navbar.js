@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar__content">
                 <div className="navbar__content--logobox">
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL + "/"}>
                         <img
                             src={logo2x}
                             alt=""
@@ -24,7 +24,7 @@ const Navbar = () => {
                     </Button>
                     <Button
                         style={styles}
-                        href="#"
+                        href={process.env.PUBLIC_URL + "/#pricing"}
                         className="navbar__content--link">
                         Pricing
                     </Button>

@@ -8,6 +8,7 @@ import Features from "./components/Features";
 import Images from "./components/Images";
 import Pricing from "./components/Pricing";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                         render={About}
                     />
                 </Switch>
+                <Footer />
             </div>
         </Router>
     );

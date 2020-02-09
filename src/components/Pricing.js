@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 
 const Pricing = () => {
     return (
-        <div className="pricing">
+        <div className="pricing" id="pricing">
             <div className="pricing__flexbox">
                 <div className="pricing__plan pricing__plan--basic">
                     <img
@@ -21,31 +21,31 @@ const Pricing = () => {
                     </h3>
                     <div className="pricing__plan--text">
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Unlimited Book History
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Recommended & Discover Feeds
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Basic Statistics
                         </p>
                         <p>
-                            <i class="fas fa-times" />
+                            <i className="fas fa-times" />
                             Blind Delivery
                         </p>
                         <p>
-                            <i class="fas fa-times" />
+                            <i className="fas fa-times" />
                             Free Shipping
                         </p>
                         <p>
-                            <i class="fas fa-times" />
+                            <i className="fas fa-times" />
                             Multiple Profiles
                         </p>
                         <p>
-                            <i class="fas fa-times" />
+                            <i className="fas fa-times" />
                             Audible Subscription*
                         </p>
                     </div>
@@ -68,31 +68,31 @@ const Pricing = () => {
                     </h3>
                     <div className="pricing__plan--text">
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Unlimited Book History
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Recommended & Discover Feeds
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Advanced Statistics
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Blind Delivery
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Free Shipping
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Multiple Profiles
                         </p>
                         <p>
-                            <i class="fas fa-check" />
+                            <i className="fas fa-check" />
                             Audible Subscription*
                         </p>
                     </div>
