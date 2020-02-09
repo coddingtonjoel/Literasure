@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="navbar__content--links">
                     <Button
                         style={styles}
-                        href="#"
+                        href={process.env.PUBLIC_URL + "/about"}
                         className="navbar__content--link">
                         About
                     </Button>

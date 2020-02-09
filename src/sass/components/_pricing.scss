@@ -1,0 +1,96 @@
+@import "../abstracts/variables";
+
+.pricing {
+    height: 60vh;
+    margin: 3rem 0;
+
+    &__flexbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        color: white;
+        height: 5rem;
+        width: 13rem;
+        box-shadow: $box-shadow;
+        position: absolute;
+        bottom: -80%;
+        right: -74%;
+    }
+}
+
+.pricing__plan {
+    height: 50vh;
+    display: inline-block;
+    width: 45%;
+    background: rgb(50, 50, 50);
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+    position: relative;
+
+    &--basic {
+        flex: 0 0 60rem;
+        margin-left: 5rem;
+    }
+    &--premium {
+        flex: 0 0 60rem;
+        margin-right: 5rem;
+    }
+
+    &--title {
+        position: absolute;
+        color: #fdb931;
+        letter-spacing: 1rem;
+        font-weight: 300;
+        top: 3.7rem;
+        left: 10rem;
+    }
+
+    &--title-basic {
+        color: white;
+    }
+
+    &--icon {
+        height: 8rem;
+        margin-right: 2rem;
+        position: absolute;
+        top: 3.1rem;
+        left: 1.2rem;
+    }
+
+    &--text {
+        position: absolute;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: white;
+        top: 13rem;
+        left: 8rem;
+    }
+
+    &--price {
+        color: #d1d1d1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        position: absolute;
+        top: 8.5rem;
+        left: 10.2rem;
+    }
+
+    &--price-basic {
+    }
+}
+
+.fa-check {
+    color: #c1ff98;
+    padding-right: 1.5rem;
+}
+
+.fa-times {
+    font-size: 2rem;
+    color: rgb(238, 92, 92);
+    padding-right: 1.5rem;
+}
