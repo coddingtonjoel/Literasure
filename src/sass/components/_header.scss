@@ -40,31 +40,6 @@
     }
 }
 
-.header__title {
-    &--main {
-        display: block;
-        text-transform: uppercase;
-        font-family: "Cinzel", serif;
-        letter-spacing: 1rem;
-        animation: fadeInHead 2.5s ease;
-    }
-
-    &--sub {
-        opacity: 0;
-        display: block;
-        font-family: "Raleway", sans-serif;
-        font-weight: 300;
-        font-size: 2.5rem;
-        animation: fadeInSub 1.5s ease-out;
-        animation-delay: 0.8s;
-        animation-fill-mode: forwards;
-    }
-
-    &--sub-actually {
-        font-weight: 700;
-    }
-}
-
 .header__btn {
     &:link,
     &:visited {

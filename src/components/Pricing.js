@@ -112,7 +112,8 @@ const styles = {
     fontFamily: "Raleway",
     fontWeight: 400,
     backgroundColor: "#d9d9d9",
-    fontSize: "1.2rem"
+    fontSize: "1.2rem",
+    position: "absolute"
 };
 
 export default Pricing;

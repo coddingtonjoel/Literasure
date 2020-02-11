@@ -1,7 +1,18 @@
+@import "../abstracts/mixins";
+
 .navbar {
     z-index: 1;
     position: relative;
     height: 11vh;
+
+    @include media(tablet-p) {
+        height: 9vh;
+    }
+
+    @include media(phone) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .navbar__content {

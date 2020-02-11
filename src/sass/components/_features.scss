@@ -33,21 +33,6 @@
         transform: translateX(-50%);
     }
 
-    &--head {
-        padding: 0 2.5rem;
-        font-size: 2.7rem;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    &--label {
-        padding: 2rem 2.5rem;
-        text-align: left;
-        font-size: 1.8rem;
-        font-weight: 300;
-        text-align: center;
-    }
-
     &:hover {
         transform: translateY(-1rem);
     }

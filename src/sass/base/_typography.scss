@@ -1,3 +1,6 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -5,4 +8,132 @@ body {
     line-height: 1.5;
     color: rgb(58, 58, 58);
     box-sizing: border-box;
+}
+
+.header__title {
+    &--main {
+        display: block;
+        text-transform: uppercase;
+        font-family: "Cinzel", serif;
+        letter-spacing: 1rem;
+        animation: fadeInHead 2.5s ease;
+    }
+
+    &--sub {
+        opacity: 0;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 2.5rem;
+        animation: fadeInSub 1.5s ease-out;
+        animation-delay: 0.8s;
+        animation-fill-mode: forwards;
+        width: 100rem;
+
+        @include media(phone) {
+            font-size: 35%;
+            font-weight: 400;
+        }
+    }
+
+    &--sub-actually {
+        font-weight: 700;
+    }
+}
+
+.hook {
+    &__box--text {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        width: 90vw;
+        background: $gold-gradient-2;
+        background-clip: text;
+        color: transparent;
+        text-shadow: $box-shadow;
+        text-transform: uppercase;
+    }
+
+    &__box--primary {
+        font-size: 2.8rem;
+    }
+
+    &__box--sub {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+}
+
+.features__section {
+    &--head {
+        padding: 0 2.5rem;
+        font-size: 2.7rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &--label {
+        padding: 2rem 2.5rem;
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.pricing__plan {
+    &--title {
+        letter-spacing: 1rem;
+        font-weight: 300;
+        color: #fdb931;
+    }
+
+    &--title-basic {
+        color: white;
+    }
+
+    &--text {
+        position: absolute;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: white;
+        top: 13rem;
+        left: 8rem;
+    }
+
+    &--price {
+        color: #d1d1d1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+        position: absolute;
+        top: 8.5rem;
+        left: 10.2rem;
+    }
+}
+
+.footer {
+    font-family: "Roboto", sans-serif;
+
+    &__address {
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.footer__company {
+    color: white;
+    text-align: center;
+
+    &--brand {
+        font-size: 2rem;
+        font-family: "Cinzel";
+        font-weight: 300;
+        letter-spacing: 0.4rem;
+    }
+
+    &--sub {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
 }
