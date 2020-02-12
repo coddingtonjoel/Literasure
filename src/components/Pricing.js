@@ -53,7 +53,9 @@ const Pricing = () => {
                         variant="contained"
                         style={styles}
                         className="pricing__button">
-                        GET STARTED
+                        <span className="pricing__plan--select">
+                            Select Plan
+                        </span>
                     </Button>
                 </div>
                 <div className="pricing__plan pricing__plan--premium">
@@ -100,7 +102,9 @@ const Pricing = () => {
                         variant="contained"
                         style={styles}
                         className="pricing__button">
-                        GET STARTED
+                        <span className="pricing__plan--select">
+                            Select Plan
+                        </span>
                     </Button>
                 </div>
             </div>
@@ -113,7 +117,11 @@ const styles = {
     fontWeight: 400,
     backgroundColor: "#d9d9d9",
     fontSize: "1.2rem",
-    position: "absolute"
+    position: "absolute",
+    height: "100%",
+    background: "rgb(35, 35, 35)",
+    color: "#caac28",
+    transition: "0.3s"
 };
 
 export default Pricing;

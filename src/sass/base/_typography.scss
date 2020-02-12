@@ -24,14 +24,14 @@ body {
         display: block;
         font-family: "Raleway", sans-serif;
         font-weight: 300;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         animation: fadeInSub 1.5s ease-out;
         animation-delay: 0.8s;
         animation-fill-mode: forwards;
-        width: 100rem;
+        width: 100%;
 
         @include media(phone) {
-            font-size: 35%;
+            font-size: 33%;
             font-weight: 400;
         }
     }
@@ -69,6 +69,16 @@ body {
         font-size: 2.7rem;
         font-weight: 600;
         text-align: center;
+
+        //fixes small sizing error
+        @media (max-width: 1375px) {
+            font-size: 2.2rem;
+        }
+
+        //when flex-wrap begins
+        @media (max-width: 1075px) {
+            font-size: 3rem;
+        }
     }
 
     &--label {
@@ -77,6 +87,17 @@ body {
         font-size: 1.8rem;
         font-weight: 300;
         text-align: center;
+
+        //fixes small sizing error
+        @media (max-width: 1375px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 1075px) {
+            font-size: 1.9rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
     }
 }
 

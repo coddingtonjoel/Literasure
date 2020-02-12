@@ -1,8 +1,9 @@
 @import "../abstracts/mixins";
 
-.navbar {
+.navbar__content {
+    width: 100%;
+    display: flex;
     z-index: 1;
-    position: relative;
     height: 11vh;
 
     @include media(tablet-p) {
@@ -13,11 +14,6 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-}
-
-.navbar__content {
-    width: 100%;
-    display: flex;
 
     &--logobox {
         position: relative;
@@ -35,6 +31,7 @@
         top: 1.5rem;
         flex: 1 0 20%;
         align-self: flex-end;
+        margin-right: 2rem;
     }
 
     &--link {

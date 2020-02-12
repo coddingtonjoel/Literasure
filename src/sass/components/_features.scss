@@ -1,5 +1,5 @@
 @import "../abstracts/variables";
-@import "../abstracts/extends";
+@import "../abstracts/mixins";
 
 .features {
     display: flex;
@@ -9,6 +9,11 @@
     box-shadow: $box-shadow;
     border-radius: 12px;
     margin-top: 3rem;
+
+    //breakpoint for flex-wrap
+    @media (max-width: 1075px) {
+        flex-wrap: wrap;
+    }
 }
 
 .features__section {
@@ -18,19 +23,43 @@
     background-image: $gold-gradient;
     height: 50vh;
     display: inline-block;
-    padding-top: 12%;
+    padding-top: 7rem;
     align-items: center;
     box-shadow: $box-shadow;
     border-radius: 12px;
     position: relative;
     transition: 0.2s;
+    min-height: 35rem;
+
+    @media (max-width: 1075px) {
+        flex: 0 0 46%;
+        height: 40vh;
+    }
+
+    @media (max-width: 680px) {
+        flex: 1 0 92%;
+    }
 
     &--icon {
-        font-size: 5rem;
-        position: absolute;
+        font-size: 4rem;
+        position: relative;
         top: 15%;
         left: 50%;
         transform: translateX(-50%);
+        padding-bottom: 3rem;
+
+        @include media(tablet-l) {
+            font-size: 3.5rem;
+        }
+
+        @include media(tablet-p) {
+            font-size: 2.8rem;
+        }
+
+        //flex-wrap begins
+        @media (max-width: 1075px) {
+            font-size: 5rem;
+        }
     }
 
     &:hover {

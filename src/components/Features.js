@@ -31,8 +31,8 @@ const Features = () => {
                 <i className="fas fa-truck-loading features__section--icon"></i>
                 <p className="features__section--head">Blind Delivery</p>
                 <div className="features__section--label">
-                    Option for blind delivery that doesn't reveal title or
-                    subject matter. Get surprised!
+                    Option for blind delivery that doesn't reveal title, genre
+                    or subject matter. Get surprised!
                 </div>
             </div>
         </div>
