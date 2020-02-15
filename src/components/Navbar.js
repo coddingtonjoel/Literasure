@@ -45,7 +45,6 @@ const Navbar = () => {
 };
 
 const styles = {
-    color: "transparent",
     fontSize: "1.3rem",
     fontFamily: "'Raleway', sans-serif",
     fontWeight: "400",

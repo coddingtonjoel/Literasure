@@ -47,7 +47,9 @@
     &--link {
         // !important necessary for overriding Material-UI button attributes
         background-image: $gold-gradient-2 !important;
+        -webkit-background-clip: text;
         background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin: 0 1rem !important;
         transition: 0.2s !important;
     }
