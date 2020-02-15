@@ -48,7 +48,8 @@ const styles = {
     color: "transparent",
     fontSize: "1.3rem",
     fontFamily: "'Raleway', sans-serif",
-    fontWeight: "400"
+    fontWeight: "400",
+    zIndex: "1"
 };
 
 export default Navbar;

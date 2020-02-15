@@ -59,6 +59,7 @@ body {
         color: transparent;
         text-shadow: $box-shadow;
         text-transform: uppercase;
+        z-index: 1;
     }
 
     &__box--primary {
