@@ -23,6 +23,20 @@
 
     &--logo {
         height: 7rem;
+        position: absolute;
+
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    &--logoSm {
+        height: 7rem;
+        position: absolute;
+
+        @media (max-width: 450px) {
+            display: inline-block;
+        }
     }
 
     &--links {

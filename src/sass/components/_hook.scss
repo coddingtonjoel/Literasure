@@ -14,6 +14,10 @@
     animation-delay: 2s;
     animation-fill-mode: backwards;
 
+    @include media(tablet-l) {
+        padding: 5%;
+    }
+
     &__box {
         align-self: center;
         height: 30vh;

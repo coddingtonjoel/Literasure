@@ -1,5 +1,6 @@
 import React from "react";
 import logo2x from "../images/LiterasureGoldFull.png";
+import logoSm from "../images/LiterasureGold.png";
 import Button from "@material-ui/core/Button";
 
 const Navbar = () => {
@@ -11,6 +12,11 @@ const Navbar = () => {
                         src={logo2x}
                         alt=""
                         className="navbar__content--logo"
+                    />
+                    <img
+                        src={logoSm}
+                        alt=""
+                        className="navbar__content--logoSm"
                     />
                 </a>
             </div>

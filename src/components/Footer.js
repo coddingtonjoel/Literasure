@@ -8,14 +8,19 @@ const Footer = () => {
                 <p className="footer__company--brand">Literasure</p>
                 <p className="footer__company--sub">©Paperback Inc. 2020</p>
             </div>
-            <div style={styles.btn_div}>
+            <div className="footer__links" style={styles.btn_div}>
                 <Button
+                    className="footer__link--btn"
                     href={process.env.PUBLIC_URL + "/about"}
                     style={styles.btn}>
                     About
                 </Button>
-                <Button style={styles.btn}>Contact</Button>
-                <Button style={styles.btn}>Terms & Conditions</Button>
+                <Button className="footer__link--btn" style={styles.btn}>
+                    Contact
+                </Button>
+                <Button className="footer__link--btn" style={styles.btn}>
+                    Terms & Conditions
+                </Button>
             </div>
             <div className="footer__social" style={styles.social_div}>
                 <Button
@@ -55,7 +60,7 @@ const styles = {
         color: "white",
         fontWeight: 400,
         fontSize: "1rem",
-        margin: "0 1rem"
+        margin: "0.5rem 1rem"
     },
     btn_div: {
         alignSelf: "center",

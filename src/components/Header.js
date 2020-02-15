@@ -36,7 +36,8 @@ const Header = () => {
 const styles = {
     btn: {
         fontFamily: "Raleway",
-        fontWeight: 400
+        fontWeight: 400,
+        margin: "1rem 1rem"
     }
 };
 
