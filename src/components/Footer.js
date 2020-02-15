@@ -59,8 +59,8 @@ const styles = {
     btn: {
         color: "white",
         fontWeight: 400,
-        fontSize: "1rem",
-        margin: "0.5rem 1rem"
+        fontSize: "0.1rem",
+        margin: "0.5rem 0"
     },
     btn_div: {
         alignSelf: "center",

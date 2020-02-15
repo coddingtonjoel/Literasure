@@ -46,7 +46,7 @@
 
     &--link {
         // !important necessary for overriding Material-UI button attributes
-        background-image: $gold-gradient-2 !important;
+        background-image: $gold-gradient !important;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;

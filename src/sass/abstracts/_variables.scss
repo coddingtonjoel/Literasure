@@ -19,7 +19,7 @@ $box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
 
 $gold-gradient: linear-gradient(315deg, #e9b34fde 0%, #ebb755dc 74%);
 
-$gold-gradient-2: radial-gradient(
+$gold-gradient-2: -webkit-radial-gradient(
         ellipse farthest-corner at right bottom,
         #fedb37 0%,
         #fdb931 8%,

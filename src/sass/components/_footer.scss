@@ -11,6 +11,10 @@
     display: flex;
     padding: 0 5%;
 
+    @media (max-width: 1062px) {
+        height: 22vh;
+    }
+
     @include media(tablet-p) {
         position: relative;
         margin-top: 4rem;
@@ -24,18 +28,23 @@
         flex-wrap: wrap;
     }
 
+    @media (max-width: 480px) {
+        height: 33vh;
+    }
+
     &__links {
         flex: 1 1 25%;
         align-self: center;
         text-align: center;
         height: 50%;
 
-        @include media(phone) {
-            font-size: 0.8rem;
-        }
-
         @media (max-width: 710px) {
             font-size: 0.7rem;
+            margin-top: 2rem !important;
+        }
+
+        @include media(phone) {
+            font-size: 0.8rem;
         }
     }
 
@@ -53,6 +62,10 @@
 
         @include media(phone) {
             text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            margin-top: 2rem;
         }
     }
 }
