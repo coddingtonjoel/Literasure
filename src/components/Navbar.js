@@ -48,7 +48,7 @@ const styles = {
     fontSize: "1.3rem",
     fontFamily: "'Raleway', sans-serif",
     fontWeight: "400",
-    zIndex: "1"
+    color: "#dbb04a"
 };
 
 export default Navbar;
