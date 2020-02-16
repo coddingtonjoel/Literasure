@@ -22,7 +22,10 @@
         height: 100%;
         z-index: -1;
         opacity: 0;
-        background-image: url("../../images/bookshelf.jpg");
+        background-image: image-set(
+            url("../../images/bookshelf.png") 1x,
+            url("../../images/bookshelf@2x.png") 2x
+        );
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;

@@ -1,6 +1,12 @@
+@import "../abstracts/mixins";
+
 .images {
     display: flex;
     height: 100%;
+
+    @media (max-width: 680px) {
+        flex-wrap: wrap;
+    }
 
     &__croptwo {
         flex: 1 0 0;
@@ -20,6 +26,33 @@
             rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0)
         );
+
+        @include media(tablet-l) {
+            height: 40rem;
+        }
+
+        @media (max-width: 1000px) {
+            height: 35rem;
+        }
+
+        @media (max-width: 680px) {
+            -webkit-mask-image: -webkit-gradient(
+                linear,
+                top,
+                bottom,
+                from(rgba(0, 0, 0, 1)),
+                to(rgba(0, 0, 0, 0))
+            );
+            mask-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0)
+            );
+            flex: 0 0 75%;
+            width: 100vw;
+            height: 100%;
+            margin: auto;
+        }
     }
 
     &__cropone {
@@ -40,5 +73,36 @@
             rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0)
         );
+
+        @include media(tablet-l) {
+            height: 40rem;
+        }
+
+        @media (max-width: 1000px) {
+            height: 35rem;
+        }
+
+        @media (max-width: 680px) {
+            -webkit-mask-image: -webkit-gradient(
+                linear,
+                bottom,
+                top,
+                from(rgba(0, 0, 0, 1)),
+                to(rgba(0, 0, 0, 0))
+            );
+            mask-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0)
+            );
+            flex: 0 0 75%;
+            width: 100vw;
+            height: 100%;
+            margin: auto;
+        }
+
+        @media (max-width: 450px) {
+            flex: 0 0 50%;
+        }
     }
 }
