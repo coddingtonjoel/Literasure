@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             <div className="footer__address">
                 <p>325 Yucca Valley Rd. Palm Springs, CA 95271</p>
-                <p>(382)-5839-2952</p>
+                <p>(382) 5839 2952</p>
                 <p>info@literasure.com</p>
             </div>
         </footer>

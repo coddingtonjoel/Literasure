@@ -13,23 +13,23 @@ const Images = () => {
         <div className="images">
             <picture>
                 <source
-                    srcset={`${cropsm2_1x} 1x, ${cropsm2_2x} 2x`}
+                    srcSet={`${cropsm2_1x} 1x, ${cropsm2_2x} 2x`}
                     media="(max-width: 680px)"
                 />
                 <img
                     className="images__croptwo"
-                    srcset={`${crop_two1x} 1x, ${crop_two2x} 2x`}
+                    srcSet={`${crop_two1x} 1x, ${crop_two2x} 2x`}
                     alt=""
                 />
             </picture>
             <picture>
                 <source
-                    srcset={`${cropsm1_1x} 1x, ${cropsm1_2x} 2x`}
+                    srcSet={`${cropsm1_1x} 1x, ${cropsm1_2x} 2x`}
                     media="(max-width: 680px)"
                 />
                 <img
                     className="images__cropone"
-                    srcset={`${crop_one1x} 1x, ${crop_one2x} 2x`}
+                    srcSet={`${crop_one1x} 1x, ${crop_one2x} 2x`}
                     alt=""
                 />
             </picture>

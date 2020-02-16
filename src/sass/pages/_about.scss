@@ -1,0 +1,97 @@
+@import "../abstracts/variables";
+
+.about {
+    &__container {
+        background: rgb(51, 51, 51);
+        border-radius: 1.2rem;
+        color: white;
+        padding: 3% 15%;
+        line-height: 2;
+        text-align: center;
+        box-shadow: $box-shadow;
+    }
+
+    &__head {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 0 10% 2rem 10%;
+        font-family: "Cinzel";
+        color: #dbb04a;
+        text-transform: uppercase;
+        text-shadow: $box-shadow;
+    }
+
+    &__body--main {
+        font-size: 1.7rem;
+    }
+
+    &__body--foot {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 5rem;
+    }
+
+    &__github--container {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    &__github--link {
+        margin-left: 10px;
+        color: rgb(51, 51, 51);
+        text-decoration: none;
+    }
+
+    &__github--link:hover {
+        text-decoration: none;
+    }
+
+    &__github--btn {
+        background-color: #dbb04a !important;
+        box-shadow: $box-shadow !important;
+    }
+
+    &__original--caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+    }
+
+    &__modal--container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 75vh;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    &__image {
+        margin-top: 4rem;
+        width: 25%;
+        border-radius: 12px;
+        margin: 1rem;
+        transition: 0.2s;
+    }
+
+    &__image:hover {
+        transform: scale(1.05);
+        box-shadow: $box-shadow;
+    }
+}
+
+.about__mockup {
+    &--container {
+        margin-top: 3rem;
+        background: rgb(51, 51, 51);
+        border-radius: 1.2rem;
+        color: white;
+        padding: 3% 15%;
+        line-height: 2;
+        text-align: center;
+        box-shadow: $box-shadow;
+    }
+}
