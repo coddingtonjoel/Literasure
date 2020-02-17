@@ -10,6 +10,10 @@
         line-height: 2;
         text-align: center;
         box-shadow: $box-shadow;
+
+        @include media(tablet-p) {
+            padding: 3% 8%;
+        }
     }
 
     &__head {
@@ -21,11 +25,19 @@
         color: #dbb04a;
         text-transform: uppercase;
         text-shadow: $box-shadow;
+
+        @media (max-width: 500px) {
+            font-size: 3.3rem;
+        }
     }
 
     &__body--main {
         font-size: 1.7rem;
         font-weight: 200;
+
+        @include media(phone) {
+            font-size: 2.2rem;
+        }
     }
 
     &__body--foot {
@@ -69,6 +81,10 @@
         height: 100%;
         align-content: space-around;
         align-items: center;
+
+        @include media(phone) {
+            flex-wrap: wrap;
+        }
     }
 
     &__image {
@@ -76,6 +92,11 @@
         width: 15vw;
         border-radius: 12px;
         transition: 0.2s;
+
+        @include media(phone) {
+            flex: 0 0 25%;
+            width: 35vw;
+        }
     }
 
     &__image:hover {
@@ -90,6 +111,10 @@
     &__image--link {
         width: 100%;
         margin: 0 2rem;
+
+        @include media(phone) {
+            width: 35vw;
+        }
     }
 }
 
@@ -103,6 +128,10 @@
         line-height: 2;
         text-align: center;
         box-shadow: $box-shadow;
+
+        @include media(phone) {
+            padding: 3% 5%;
+        }
     }
 }
 

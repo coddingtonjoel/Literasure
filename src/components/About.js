@@ -50,11 +50,6 @@ const About = (props) => {
                 <div className="about__image--container">
                     <Link
                         className="about__image--link"
-                        to="/about/img/original">
-                        <img className="about__image" src={original} alt="" />
-                    </Link>
-                    <Link
-                        className="about__image--link"
                         to="/about/img/wireframehome">
                         <img
                             className="about__image"
@@ -76,6 +71,11 @@ const About = (props) => {
                         className="about__image--link"
                         to="/about/img/highfidelity">
                         <img className="about__image" src={highf} alt="" />
+                    </Link>
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/original">
+                        <img className="about__image" src={original} alt="" />
                     </Link>
                 </div>
             </div>

@@ -37,6 +37,13 @@
         align-self: center;
         text-align: center;
         height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media(tablet-p) {
+            flex-direction: column;
+        }
 
         @media (max-width: 710px) {
             font-size: 0.7rem;
@@ -53,6 +60,13 @@
         align-self: center;
         text-align: center;
         height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media(tablet-p) {
+            flex-direction: column;
+        }
     }
 
     &__address {

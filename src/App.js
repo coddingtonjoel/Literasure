@@ -47,24 +47,6 @@ function App() {
                     />
                     <Route
                         exact
-                        path={process.env.PUBLIC_URL + "/about/img/original"}
-                        render={(props) => (
-                            <div className="aboutimg">
-                                <div className="aboutimg__container">
-                                    <Link to="/about">
-                                        <i className="fas fa-arrow-left"></i>
-                                    </Link>
-                                    <img
-                                        className="aboutimg__img"
-                                        src={original}
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        )}
-                    />
-                    <Route
-                        exact
                         path={process.env.PUBLIC_URL + "/about/img/wireframe"}
                         render={(props) => (
                             <div className="aboutimg">
@@ -136,6 +118,24 @@ function App() {
                                     <img
                                         className="aboutimg__img"
                                         srcSet={`${highfhome} 1x, ${highfhome2x} 2x`}
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        )}
+                    />
+                    <Route
+                        exact
+                        path={process.env.PUBLIC_URL + "/about/img/original"}
+                        render={(props) => (
+                            <div className="aboutimg">
+                                <div className="aboutimg__container">
+                                    <Link to="/about">
+                                        <i className="fas fa-arrow-left"></i>
+                                    </Link>
+                                    <img
+                                        className="aboutimg__img"
+                                        src={original}
                                         alt=""
                                     />
                                 </div>

@@ -19,6 +19,11 @@ body {
         animation: fadeInHead 2.5s ease;
 
         @media (max-width: 500px) {
+            font-size: 6rem;
+            letter-spacing: 0.5rem;
+        }
+
+        @media (max-width: 425px) {
             font-size: 5rem;
             letter-spacing: 0.5rem;
         }
