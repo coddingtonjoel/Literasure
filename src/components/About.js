@@ -2,13 +2,10 @@ import React, { Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import original from "../images/original.png";
 import wireframe from "../images/wireframe.png";
-import wireframe2x from "../images/wireframe@2x.png";
 import wireframehome from "../images/wireframehome.png";
-import wireframehome2x from "../images/wireframehome@2x.png";
 import highf from "../images/highf.png";
-import highf2x from "../images/highf@2x.png";
 import highfhome from "../images/highfhome.png";
-import highfhome2x from "../images/highfhome@2x.png";
+import { Link } from "react-router-dom";
 
 const About = (props) => {
     return (
@@ -34,27 +31,52 @@ const About = (props) => {
                         style={styles.button}
                         variant="contained">
                         <i className="fab fa-github"></i>
-                        <a
+                        <Link
                             className="about__github--link"
                             target="__blank"
                             rel="noopener noreferrer"
-                            href="https://github.com/coddingtonjoel">
+                            to="https://github.com/coddingtonjoel">
                             Joel's GitHub
-                        </a>
+                        </Link>
                     </Button>
                 </div>
             </div>
-            <div className="about__mockup--container">
+            <div id="mockups" className="about__mockup--container">
                 <h1 className="about__head">Wireframes and Mockups</h1>
-                <p className="about__body--main">
+                <div className="about__body--main">
                     Proving that anything is possible with time and dedication!
-                </p>
-                <div className="about__modal--container">
-                    <img className="about__image" src={original} alt="" />
-                    <img className="about__image" src={wireframehome} alt="" />
-                    <img className="about__image" src={wireframe} alt="" />
-                    <img className="about__image" src={highfhome} alt="" />
-                    <img className="about__image" src={highf} alt="" />
+                    <p>Click to view.</p>
+                </div>
+                <div className="about__image--container">
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/original">
+                        <img className="about__image" src={original} alt="" />
+                    </Link>
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/wireframehome">
+                        <img
+                            className="about__image"
+                            src={wireframehome}
+                            alt=""
+                        />
+                    </Link>
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/wireframe">
+                        <img className="about__image" src={wireframe} alt="" />
+                    </Link>
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/highfidelityhome">
+                        <img className="about__image" src={highfhome} alt="" />
+                    </Link>
+                    <Link
+                        className="about__image--link"
+                        to="/about/img/highfidelity">
+                        <img className="about__image" src={highf} alt="" />
+                    </Link>
                 </div>
             </div>
         </Fragment>
