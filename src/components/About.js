@@ -31,13 +31,13 @@ const About = (props) => {
                         style={styles.button}
                         variant="contained">
                         <i className="fab fa-github"></i>
-                        <Link
+                        <a
                             className="about__github--link"
                             target="__blank"
                             rel="noopener noreferrer"
-                            to="https://github.com/coddingtonjoel">
+                            href="https://github.com/coddingtonjoel">
                             Joel's GitHub
-                        </Link>
+                        </a>
                     </Button>
                 </div>
             </div>
