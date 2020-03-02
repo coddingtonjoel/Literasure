@@ -18,13 +18,13 @@ const Header = () => {
                     <Button
                         style={styles.btn}
                         className="header__btn header__btn--signup"
-                        href="#">
+                        href="/signup">
                         Sign Up
                     </Button>
                     <Button
                         style={styles.btn}
                         className="header__btn header__btn--login"
-                        href="#">
+                        href="/login">
                         Login
                     </Button>
                 </h1>

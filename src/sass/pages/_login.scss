@@ -1,0 +1,69 @@
+@import "../abstracts/variables";
+
+.login {
+    &__container {
+        background: rgb(51, 51, 51);
+        border-radius: 1.2rem;
+        color: white;
+        padding: 5% 15%;
+        line-height: 2;
+        text-align: center;
+        box-shadow: $box-shadow;
+        height: 55rem;
+
+        @include media(tablet-p) {
+            padding: 5% 8%;
+        }
+    }
+
+    &__head--container {
+        padding: 0 0 2% 0;
+    }
+
+    &__head {
+        text-align: center;
+        font-size: 3.8rem;
+        font-weight: 700;
+        padding: 0 5%;
+        font-family: "Cinzel";
+        color: #dbb04a;
+        text-transform: uppercase;
+        text-shadow: $box-shadow;
+        letter-spacing: 2px;
+
+        @media (max-width: 500px) {
+            font-size: 3.3rem;
+        }
+    }
+
+    &__head--sub {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    &__head--sublink,
+    &__head--sublink:link,
+    &__head--sublink:visited {
+        color: rgb(97, 199, 240);
+        text-decoration: none;
+    }
+}
+
+.login__form {
+    width: inherit;
+
+    &--email,
+    &--password {
+        display: block;
+        margin: 3rem auto;
+        padding: 1rem;
+        width: 40rem;
+        height: 4.5rem;
+        font-family: "Raleway", sans-serif;
+        border: none;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        box-shadow: $box-shadow;
+    }
+}

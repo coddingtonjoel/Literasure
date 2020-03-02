@@ -5,6 +5,8 @@ import WireframeHome from "../pages/aboutImages/WireframeHome";
 import Highfidelity from "../pages/aboutImages/Highfidelity";
 import HighfidelityHome from "../pages/aboutImages/HighfidelityHome";
 import Original from "../pages/aboutImages/Original";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 const routes = [
     {
@@ -34,6 +36,14 @@ const routes = [
     {
         path: process.env.PUBLIC_URL + "/about/img/original",
         component: Original
+    },
+    {
+        path: process.env.PUBLIC_URL + "/login",
+        component: Login
+    },
+    {
+        path: process.env.PUBLIC_URL + "/signup",
+        component: Signup
     }
 ];
 

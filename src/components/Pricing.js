@@ -50,6 +50,7 @@ const Pricing = () => {
                         </p>
                     </div>
                     <Button
+                        href="/login"
                         variant="contained"
                         style={styles}
                         className="pricing__button">
@@ -99,6 +100,7 @@ const Pricing = () => {
                         </p>
                     </div>
                     <Button
+                        href="/login"
                         variant="contained"
                         style={styles}
                         className="pricing__button">
@@ -121,7 +123,8 @@ const styles = {
     height: "100%",
     background: "rgb(35, 35, 35)",
     color: "#caac28",
-    transition: "0.3s"
+    transition: "0.3s",
+    textAlign: "center"
 };
 
 export default Pricing;

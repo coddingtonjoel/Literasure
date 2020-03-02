@@ -35,7 +35,7 @@ const Navbar = () => {
                 </Button>
                 <Button
                     style={styles}
-                    href="#"
+                    href="/login"
                     className="navbar__content--link">
                     Login
                 </Button>
