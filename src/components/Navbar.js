@@ -1,6 +1,6 @@
 import React from "react";
-import logo2x from "../images/LiterasureGoldFull.png";
-import logoSm from "../images/LiterasureGold.png";
+import logo from "../images/LiterasureGoldFull.svg";
+import logoSm from "../images/LiterasureGold.svg";
 import Button from "@material-ui/core/Button";
 
 const Navbar = () => {
@@ -8,11 +8,7 @@ const Navbar = () => {
         <div className="navbar__content">
             <div className="navbar__content--logobox">
                 <a href={process.env.PUBLIC_URL + "/"}>
-                    <img
-                        src={logo2x}
-                        alt=""
-                        className="navbar__content--logo"
-                    />
+                    <img src={logo} alt="" className="navbar__content--logo" />
                     <img
                         src={logoSm}
                         alt=""
@@ -48,7 +44,7 @@ const styles = {
     fontSize: "1.3rem",
     fontFamily: "'Raleway', sans-serif",
     fontWeight: "400",
-    color: "#dbb04a"
+    color: "#dbb04a",
 };
 
 export default Navbar;

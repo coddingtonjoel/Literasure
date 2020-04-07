@@ -42,6 +42,10 @@
         transform: translate(-50%, -50%);
         backface-visibility: hidden;
     }
+
+    &__logo {
+        min-width: 40rem !important;
+    }
 }
 
 .header__btn {

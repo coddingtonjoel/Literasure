@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../images/LiterasureBlack.svg";
 import Button from "@material-ui/core/Button";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
         <header className="header">
             <div className="header__text-box">
                 <h1 className="header__title">
-                    <span className="header__title--main">Literasure</span>
+                    <img className="header__logo" src={logo} alt="" />
                     <span className="header__title--sub">
                         Recommends the books you{" "}
                         <span className="header__title--sub-actually">
@@ -37,8 +37,8 @@ const styles = {
     btn: {
         fontFamily: "Raleway",
         fontWeight: 400,
-        margin: "1rem 1rem"
-    }
+        margin: "1rem 1rem",
+    },
 };
 
 export default Header;

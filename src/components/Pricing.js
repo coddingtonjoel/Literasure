@@ -1,6 +1,6 @@
 import React from "react";
-import white_icon from "../images/LiterasureWhite.png";
-import gold_icon from "../images/LiterasureGold.png";
+import white_icon from "../images/LiterasureWhite.svg";
+import gold_icon from "../images/LiterasureGold.svg";
 import Button from "@material-ui/core/Button";
 
 const Pricing = () => {
@@ -124,7 +124,7 @@ const styles = {
     background: "rgb(35, 35, 35)",
     color: "#caac28",
     transition: "0.3s",
-    textAlign: "center"
+    textAlign: "center",
 };
 
 export default Pricing;
